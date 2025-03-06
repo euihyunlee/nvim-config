@@ -1,16 +1,18 @@
 return {
-    'catppuccin/nvim',
+    "catppuccin/nvim",
     lazy = false,
     priority = 1000,
     config = function()
-        require('catppuccin').setup({
+        require("catppuccin").setup({
+            flavour = "mocha",
             transparent_background = true,
+            no_bold = true,
             no_italic = true,
-            -- integrations = {
-            --     mason = true,
-            --     which_key = true,
-            -- },
+            integrations = {
+                blink_cmp = true,
+                which_key = true,
+            },
         })
-        vim.cmd.colorscheme 'catppuccin'
+        vim.cmd.colorscheme("catppuccin")
     end,
 }
