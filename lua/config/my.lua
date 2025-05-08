@@ -10,7 +10,7 @@ vim.opt.showmode = false
 vim.opt.cursorline = true
 vim.opt.breakindent = true
 vim.opt.inccommand = "split"
-vim.opt.scrolloff = 16
+vim.opt.scrolloff = 9999
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
